@@ -1,0 +1,44 @@
+
+/*--BG color index--*/
+.bg-index{
+    background-color: rgb(70, 49, 104);
+}
+
+/*--Magen del h1--*/
+.magin-index{
+    margin-top: 10%;
+}
+
+/*--Color Fuente--*/
+.color-font{
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Rowdies', cursive;
+}
+
+.font-style{
+    font-family: 'Jura', sans-serif;
+    font-family: 'Rowdies', cursive;
+}
+
+
+/*--Progress Bar--*/
+.inicio{
+    width: 0%;
+}
+
+.final{
+    width: 100%;
+}
+
+.animacion{
+    transition: all 5s ease .5s;
+}
+
+.blurry{
+    filter: blur(4px);
+}
+
+.spinner{
+    size: 30px;
+}
