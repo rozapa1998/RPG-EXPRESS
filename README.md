@@ -8,7 +8,7 @@ Lo primero que debes hacer es generarte una cuenta para que se realice la genera
 
 ## Built With
 
-* [JS Vanilla] ![npm package](https://img.shields.io/badge/npm%20package-v1-brightgreen.svg)
+* [JS Vanilla] <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/>
 * [HTML]
 * [CSS]
 
