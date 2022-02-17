@@ -1,6 +1,9 @@
 let StatsJugador = JSON.parse(localStorage.getItem("Jugador"))
+
 console.log(StatsJugador)
-let Enemigo1 = {nombre: "Lobo", HP:30 ,DEF:12, ATQ: 4} 
+
+let Enemigo1 = {nombre: "Araña", HP:30 ,DEF:12, ATQ: 4} 
+
 let registro = document.getElementById("registroPelea")
 
 const Random = () =>{
@@ -8,9 +11,11 @@ const Random = () =>{
     return Random
 }
 
-function ImprimirDOM(texto){
-    
-    registro.innerHTML=`<p class="font-style mx-3">${texto}</p>`
+const Atacar = (ATQJugador, DEFEnemigo, HPEnemigo) =>{
+    if ((ATQJugador + Random()) >= DEFEnemigo) {
+        //Ataque exitoso
+         HPEnemigo =  HPEnemigo - ATQJugador
+    }
 }
 
 
@@ -23,9 +28,12 @@ const fraces = [
 {id:4, frace:"se rie de lo debil del ataque"}
 ]
 
+/*Progress Bar*/
 
-function Pelear(){
-    registro.innerHTML=`<img src="media/Escenarios/Forest.jpg" alt="Forest" height="670px">`
+
+
+
+const Pelear = () =>{
     //Stats Jugador
     let HPJugador = StatsJugador.HP
     let ATQJugador = StatsJugador.ATQ
@@ -35,20 +43,17 @@ function Pelear(){
     let ATQEnemigo = Enemigo1.ATQ
     let DEFEnemigo = Enemigo1.DEF
     
-    /*while (HPJugador >= 0 || HPEnemigo >= 0) {
-        
-        //Ataque del Jugador
-        if ((ATQJugador + Random()) >= DEFEnemigo) {
-           //Ataque exitoso
-            HPEnemigo =  HPEnemigo - ATQJugador
-            //Impresion de lo ocurrido
-            setTimeout(() => {
-                ImprimirDOM((StatsJugador.nombre + " pego " + ATQJugador))
-            }, 2000);
-            setTimeout(() => {
-                ImprimirDOM(("El " + Enemigo1.nombre + " le queda " + HPEnemigo + " de vida"))
-            }, 3500);
-           //Comprueba Vida
+    registro.innerHTML=`Explorando...`
+    setTimeout(() => {registro.innerHTML=`Un ${Enemigo1.nombre} se cruza en tu camino`}, 3000);
+
+    
+
+}
+
+
+/*const Pelear = () =>{
+}
+
            if (HPEnemigo <= 0) {
                break
            }
@@ -90,8 +95,4 @@ function Pelear(){
     }else{
         setTimeout(() => {
             ImprimirDOM(("Gano" + Enemigo1.nombre))
-        }, 5000);
-        
-    }*/
-    
-}
+        }, 5000);*/
