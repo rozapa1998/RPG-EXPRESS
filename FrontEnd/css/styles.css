@@ -4,6 +4,11 @@
     background-color: rgb(70, 49, 104);
 }
 
+.bosqueMithril{
+    background-image: url(../media/Escenarios/BosqueMithril.gif);
+    background-size: 100%;
+}
+
 /*--Magen del h1--*/
 .magin-index{
     margin-top: 10%;
@@ -15,6 +20,28 @@
     font-family: 'Jura', sans-serif;
     font-family: 'Rowdies', cursive;
 }
+
+.color-font-caz{
+    position: absolute;
+    animation: rebota 400ms alternate ease-out;
+    color: rgb(228, 7, 7);
+    font-family: 'Jura', sans-serif;
+    font-family: 'Rowdies', bolde;
+    font-size: 35px;
+    border-radius: 50%;
+    border-color: black;
+}
+
+@-webkit-keyframes rebota {
+    0% {
+      bottom: 0;
+      height: 50px;
+    }
+    100% {
+      bottom: 200px;
+    }
+  }
+
 
 .font-style{
     font-family: 'Jura', sans-serif;
